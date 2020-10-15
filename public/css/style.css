@@ -1,0 +1,8 @@
+body {
+    background-image: 
+        repeating-linear-gradient(135deg,#eeeeee 0px , #eeeeee 5px, #e4e4e4 5px,  #e4e4e4 10px);
+}
+.items .actions{
+    top: 5px;
+    right: 5px;
+}
