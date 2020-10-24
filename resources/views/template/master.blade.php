@@ -6,28 +6,28 @@
     <title>Logo Site</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="{{ URL::asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{ URL::asset('css/style.css').'?'.time()}}">
     
 </head>
-<body class="bg-light">
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark py-4 fixed-top">
         <a class="navbar-brand" href="#">Logo Site</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="#"><i class="fas fa-bookmark"></i> 願望清單</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i> 購物車</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="#"><i class="fas fa-bell"></i> 最新消息</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="#"><i class="fas fa-user"></i> 會員專區</a>
                 </li>
             </ul>
         </div>
